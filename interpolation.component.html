@@ -1,0 +1,22 @@
+<div>
+  <section class="data-table">
+    <div class="table-responsive">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>DOB</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users; let i = index">
+              <td>{{user.name}}</td>
+              <td>{{user.dob}}</td>
+              <td>{{connector.status | uppercase }}</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
